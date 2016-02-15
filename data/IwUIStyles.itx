@@ -1,0 +1,423 @@
+CIwUIPropertySet
+{
+	name		<popupdialog>
+	sizeMax		{ -1 160 }
+}
+CIwUIPropertySet
+{
+	name		<textentrybox>
+	sizeMax		{ -1 300 }
+}
+CIwUIPropertySet
+{
+	name <titlespacer>
+	sizeMin  { 0 40 }
+	sizeMax  { -1 40 }
+}
+CIwUIPropertySet
+{
+	name		<titlebar>
+	sizeMax		{ -1 22 }
+}
+
+CIwUIStylesheet
+{
+	name "tiny"
+	parent "iwui"
+
+	CIwUIPropertySet
+	{
+		name		<button>
+		parent		<button>
+		font		font_small
+	}
+	CIwUIPropertySet
+	{
+		name <TitlePanel>
+		sizeMin  { 0 200 }
+		sizeHint  { -1 200 }
+	}
+	CIwUIPropertySet
+	{
+		name <titlebutton>
+		parent <titlebutton>
+		sizeMin  { 0 40 }
+		sizeMax  { -1 40 }
+	}
+	CIwUIPropertySet
+	{
+		name <titlespacer>
+		parent <titlespacer>
+		sizeMin  { 0 40 }
+		sizeMax  { -1 40 }
+	}
+	CIwUIPropertySet
+	{
+		name <introbutton>
+		parent <introbutton>
+		sizeMin  { 230 40 }
+		sizeHint  { 230 40 }
+		sizeMax  { 230 40 }
+		font font_small
+	}
+	CIwUIPropertySet
+	{
+		name <gamebutton>
+		parent <gamebutton>
+		sizeMin  { 0 40 }
+		sizeMax  { 280 40 }
+		font font_small
+	}
+	CIwUIPropertySet
+	{
+		name <mapbutton>
+		parent <mapbutton>
+		sizeMin  { -1 40 }
+		sizeMax  { -1 60 }
+		font font_small
+	}
+	CIwUIPropertySet
+	{
+		name   <label_huge>
+		parent <label_huge>
+		font	font_medium
+	}
+	CIwUIPropertySet
+	{
+		name   <label_large>
+		parent <label_large>
+		font	font_small
+	}
+	CIwUIPropertySet
+	{
+		name		<titlebar>
+		sizeMax		{ -1 40 }
+	}
+	CIwUIPropertySet
+	{
+		name <label_medium>
+		parent <label_medium>
+		sizeMax  { -1 20 }
+		sizeMin	 {0 20}
+		font font_small
+	}
+	CIwUIPropertySet
+	{
+		name <label_small>
+		parent <label_small>
+		sizeMax  { -1 20 }
+		sizeMin	 {0 20}
+		font font_tiny
+	}
+	CIwUIPropertySet
+	{
+		name <edit-textField>
+		parent <textField>
+		font font_small
+		sizeMin  { 0 35 }
+		sizeMax  { -1 100 }
+		sizeHint  { -1 100 }
+	}
+	CIwUIPropertySet
+	{
+		name <popupdialog>
+		parent <popupdialog>
+		sizeMax	{ -1 200 }
+	}
+	CIwUIPropertySet
+	{
+		name <textentrybox>
+		parent <textentrybox>
+		sizeMax	{ -1 160 }
+	}
+}
+CIwUIStylesheet
+{
+	name "small"
+	parent "iwui"
+
+	CIwUIPropertySet
+	{
+		name		<button>
+		parent		<button>
+		font		font_small
+	}
+	CIwUIPropertySet
+	{
+		name <TitlePanel>
+		sizeMin  { 0 280 }
+		sizeHint  { -1 400 }
+		sizeMax  { -1 -1 }
+	}
+	CIwUIPropertySet
+	{
+		name <titlebutton>
+		parent <titlebutton>
+		sizeMin  { 0 40 }
+		sizeMax  { -1 40 }
+	}
+	CIwUIPropertySet
+	{
+		name <introbutton>
+		parent <introbutton>
+		font "font_small"
+		sizeMin  { 260 40 }
+		sizeHint  { 260 40 }
+		sizeMax  { 260 40 }
+	}
+	CIwUIPropertySet
+	{
+		name <gamebutton>
+		parent <gamebutton>
+		sizeMin  { 0 35 }
+		sizeMax  { 280 40 }
+	}
+	CIwUIPropertySet
+	{
+		name <mapbutton>
+		parent <mapbutton>
+		sizeMin  { 0 35 }
+		sizeMax  { -1 60 }
+	}
+	CIwUIPropertySet
+	{
+		name <label_medium>
+		parent <label_medium>
+		sizeMax  { -1 20 }
+		sizeMin	 {0 20}
+	}
+	CIwUIPropertySet
+	{
+		name <label_small>
+		parent <label_small>
+		sizeMax  { -1 20 }
+		sizeMin	 {0 20}
+	}
+	CIwUIPropertySet
+	{
+		name <edit-textField>
+		parent <textField>
+		font font_small
+		sizeMin  { 0 35 }
+		sizeMax  { -1 100 }
+		sizeHint  { -1 100 }
+	}
+	CIwUIPropertySet
+	{
+		name <popupdialog>
+		parent <popupdialog>
+		sizeMax	{ -1 300 }
+		sizeHint { 400 200 }
+	}
+	CIwUIPropertySet
+	{
+		name <textentrybox>
+		parent <textentrybox>
+		sizeMax	{ -1 160 }
+	}
+}
+CIwUIStylesheet
+{
+	name "medium"
+	parent "small"
+
+	CIwUIPropertySet
+	{
+		name		<button>
+		parent		<button>
+		font		font_medium
+	}
+	CIwUIPropertySet
+	{
+		name   <label_large>
+		parent <label_large>
+		font	font_large
+	}
+	
+	CIwUIPropertySet
+	{
+		name   <label_medium>
+		parent <label_medium>
+		font	font_medium
+	}
+	
+	CIwUIPropertySet
+	{
+		name   <label_small>
+		parent <label_small>
+		font	font_medium
+	}
+	CIwUIPropertySet
+	{
+		name <titlebutton>
+		parent <titlebutton>
+		sizeMin  { 0 64 }
+		sizeMax  { -1 64 }
+		sizeHint  { -1 64 }
+	}
+	CIwUIPropertySet
+	{
+		name <edit-textField>
+		parent <edit-textField>
+		font font_medium
+	}
+}
+CIwUIStylesheet
+{
+	name "large"
+	parent "medium"
+
+	CIwUIPropertySet
+	{
+		name <TitlePanel>
+		parent <TitlePanel>
+		sizeMin  { 0 450 }
+		sizeHint  { -1 500 }
+		sizeMax  { -1 550 }
+	}
+	CIwUIPropertySet
+	{
+		name <titlebutton>
+		parent <titlebutton>
+		font "font_large"
+		sizeMin  { 0 70 }
+		sizeMax  { -1 70 }
+	}
+	CIwUIPropertySet
+	{
+		name <introbutton>
+		parent <introbutton>
+		font "font_large"
+		sizeMin  { 420 74 }
+		sizeHint  { 420 74 }
+		sizeMax  { 420 74 }
+	}
+	CIwUIPropertySet
+	{
+		name <scorebutton>
+		parent <scorebutton>
+		sizeMin  { 0 60 }
+		sizeMax  { -1 100 }
+		sizeHint  { -1 100 }
+	}
+	CIwUIPropertySet
+	{
+		name <gamebutton>
+		parent <gamebutton>
+		sizeMin  { 0 70 }
+		sizeMax  { -1 70 }
+	}
+	CIwUIPropertySet
+	{
+		name <mapbutton>
+		parent <mapbutton>
+		sizeMax  { -1 100 }
+	}
+	CIwUIPropertySet
+	{
+		name		<button>
+		parent		<button>
+		font		font_large
+	}
+	CIwUIPropertySet
+	{
+		name   <label_large>
+		parent <label_large>
+		font	font_large
+	}
+	
+	CIwUIPropertySet
+	{
+		name   <label_medium>
+		parent <label_medium>
+		sizeMin  { 0 40 }
+		sizeMax  { -1 40 }
+		font	font_large
+	}
+	
+	CIwUIPropertySet
+	{
+		name   <label_small>
+		parent <label_small>
+		font	font_medium
+	}
+	CIwUIPropertySet
+	{
+		name <edit-textField>
+		parent <edit-textField>
+		font font_large
+		sizeMin  { 0 70 }
+		sizeMax  { -1 120 }
+		sizeHint  { -1 120 }
+	}
+	CIwUIPropertySet
+	{
+		name <popupdialog>
+		parent <popupdialog>
+		sizeMax	{ -1 -1 }
+		sizeMin	{ 350 0 }
+		sizeHint { 800 300 }
+	}
+	CIwUIPropertySet
+	{
+		name <textentrybox>
+		parent <textentrybox>
+		sizeMax	{ -1 400 }
+	}
+	CIwUIPropertySet
+	{
+		name		<titlebar>
+		parent		<titlebar>
+		sizeMax		{ -1 40 }
+	}
+	CIwUIPropertySet 
+	{
+		name "<softkeyboard_numpad_num>"
+		parent <softkeyboard_numpad_num>
+		font "font_huge"
+	}
+	CIwUIPropertySet 
+	{
+		name "<softkeyboard_numpad_txt>"
+		parent <softkeyboard_numpad_txt>
+		font "font_huge"
+	}
+	CIwUIPropertySet 
+	{
+		name "<softkeyboard_lower_key_label>"
+		parent <softkeyboard_lower_key_label>
+		font "font_huge"
+	}
+	CIwUIPropertySet 
+	{
+		name "<softkeyboard_tab_label>"
+		parent <softkeyboard_tab_label>
+		font "font_large"
+	}
+
+	CIwUIPropertySet 
+	{
+		name "<softkeyboard_upper_key_label>"
+		parent <softkeyboard_upper_key_label>
+		font "font_huge"
+	}
+	CIwUIPropertySet 
+	{
+		name "<softkeyboard_number_key_label>"
+		parent <softkeyboard_number_key_label>
+		font "font_huge"
+	}
+	CIwUIPropertySet 
+	{
+		name "<balloon_style>"
+		parent <balloon_style>
+		font "font_huge"
+	}
+	CIwUIPropertySet 
+	{
+		name "<textField_inline>"
+		parent <textField_inline>
+		cursorSize  { 6 34 }
+		font "font_huge"
+	}
+}

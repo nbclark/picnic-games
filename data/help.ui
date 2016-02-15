@@ -1,0 +1,273 @@
+CIwUIElement 
+{
+	name "helpPanel"
+	updatable true
+	CIwUIElement 
+	{
+		name "Base"
+		updatable true
+		CIwUILayoutVertical 
+		{
+			name ""
+			sizeToSpace true
+			element 
+			{
+				name "Top"
+			}
+			element 
+			{
+				name "Shadow"
+			}
+			element 
+			{
+				name "Middle"
+			}
+		}
+		CIwUIImage 
+		{
+			name "Shadow"
+			texture "titleBarBot"
+			border  { 6 0 }
+			sizeMin  { 0 5 }
+		}
+		CIwUIButton
+		{
+			name "Top"
+			OnButtonClick  { "StaticContentGameState::OnClickBack" }
+			style	<titlebutton>
+			
+			CIwUIElement 
+			{
+				name "Base_1"
+				CIwUILabel 
+				{
+					name "ButtonQuit"
+					style	<mapbutton>
+					colour { 0 0 0 105 }
+					textColour { 255 255 255 255 }
+					caption ""
+					//font	font_large
+					sizeMin  { 32 32 }
+					sizeMax  { -1 -1 }
+					sizeHint  { 64 64 }
+
+					CIwUIImage
+					{
+						name "img"
+						sizeToContent false
+						texture "back"
+						sizeMin  { 32 32 }
+						sizeMax	{ 64 64 }
+						sizeHint  { 64 64 }
+						aspectRatio { 1 1 }
+					}
+					CIwUILayout 
+					{
+						name ""
+						element 
+						{
+							name "img"
+							alignH "centre"
+							alignV "middle"
+						}
+					}
+				}
+				CIwUILabel
+				{
+					name "TitleLabel"
+					style <label_medium>
+					colour { 0 0 0 105 }
+					textColour { 255 255 255 255 }
+					sizeMin  { 0 35 }
+					sizeMax  { -1 -1 }
+					sizeHint  { 600 64 }
+					clipped true
+					sizeToContent false
+					caption "PicnicGames Help"
+					oneLine false
+					margin  { 8 0 }
+					//font	font_large
+					OnButtonClick  { "HighScoreGameState::OnClickBack" }
+				}
+				CIwUILayoutGrid 
+				{
+					name ""
+					column { }
+					column { }
+					row { }
+					sizeToSpace true
+					element 
+					{
+						name "TitleLabel"
+						alignH "left"
+						alignV "middle"
+						row 0
+						column 0
+					}
+					element 
+					{
+						name "ButtonQuit"
+						alignH "right"
+						alignV "middle"
+						row 0
+						column 1
+					}
+				}
+			}
+			CIwUILayout 
+			{
+				name ""
+				sizeToSpace true
+				element 
+				{
+					name "Base_1"
+					border  { 0 0 }
+					alignV "middle"
+				}
+			}
+		}
+		CIwUIElement 
+		{
+			name "Middle"
+			updatable true
+			CIwUIElement 
+			{
+				name "MiddleLayer"
+				updatable true
+				CIwUIScrollableView 
+				{
+					name "Scores"
+					wrapLeft "none"
+					wrapRight "none"
+					wrapUp "none"
+					wrapDown "none"
+					updatable true
+					clipped true
+					CIwUIFocusHandlerTab 
+					{
+						name ""
+					}
+					CIwUIButton
+					{
+						name "HelpObjective"
+						style <helpbutton>
+						sizeMax { -1 -1 }
+						
+						CIwUILabel
+						{
+							name "Objective"
+							style <label_huge>
+							sizeHint  { -1 -1 }
+							clipped false
+							sizeToContent true
+							caption "PicnicGames Objective"
+							oneLine false
+						}
+						CIwUIImage
+						{
+							name "Image"
+							texture "logo"
+							aspectRatio { 1 1 }
+							sizeMax  { 64 64 }
+							sizeMin  { 32 32 }
+						}
+						CIwUILabel
+						{
+							name "Label"
+							style <label_large>
+							sizeHint  { -1 -1 }
+							sizeMax { -1 -1 }
+							clipped false
+							sizeToContent true
+							caption "PicnicGames is a multi-player game designed to get your and your friends out and running on a nice summer's day.\n\nPicnicGames consists of several short (2 minutes or less) party games.  After each game completes, all contestants are ranked by their scores, and points are awarded for the different ranks.\n\nThe player with the most points after all of the games is the winner."
+														oneLine false
+						}
+						CIwUILayoutGrid 
+						{
+							name ""
+							sizeToSpace true
+							
+							column { }
+							column { }
+							
+							row { }
+							row { }
+							
+							element 
+							{
+								name "Objective"
+								alignH "left"
+								alignV "top"
+								column 1
+								border { 0 5 }
+							}
+							element 
+							{
+								name "Image"
+								alignH "left"
+								alignV "top"
+								column 0
+								row 0
+								rowSpan 2
+								border { 10 10 }
+							}
+							element 
+							{
+								name "Label"
+								alignH "left"
+								alignV "middle"
+								row 1
+								column 1
+								border { 0 5 }
+							}
+						}
+					}
+					CIwUILayoutVertical 
+					{
+						sizeToSpace true
+						element 
+						{
+							name "HelpObjective"
+							alignH "left"
+							alignV "top"
+						}
+					}
+				}
+				CIwUILayout 
+				{
+					name ""
+					sizeToSpace true
+					element 
+					{
+						name "Scores"
+					}
+				}
+			}
+			CIwUILayout 
+			{
+				name ""
+				sizeToSpace true
+				element 
+				{
+					name "TopLayer"
+					alignV "top"
+				}
+				element 
+				{
+					name "MiddleLayer"
+					alignV "top"
+					alignH "left"
+				}
+			}
+		}
+	}
+	CIwUILayout 
+	{
+		name ""
+		sizeToSpace true
+		element 
+		{
+			name "Base"
+		}
+	}
+}

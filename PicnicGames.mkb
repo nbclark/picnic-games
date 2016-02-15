@@ -1,0 +1,146 @@
+#!/usr/bin/env i3d_make_build.py
+
+options
+{
+    module_path="$AIRPLAY_ROOT/modules/third_party"
+}
+
+includepath
+{
+    "h"
+}
+
+files
+{
+    (source)
+    Utils.cpp
+    IwJPEG.cpp
+    LiveMaps.cpp
+    Main.cpp
+    MapGame.cpp
+    CoordinateScaler.cpp
+    GameState.cpp
+    IGameObjects.cpp
+    IntroGameState.cpp
+    SelectGameGameState.cpp
+    HighScoreGameState.cpp
+    StaticContentGameState.cpp
+    ActiveGameState.cpp
+    MessageBox.cpp
+    TextEntryBox.cpp
+    AccelerometerHandler.cpp
+    FireflyMain.cpp
+    IwHTTPQueue.cpp
+    IwMultiplayerHandler.cpp
+    IwNotificationHandler.cpp
+    GoTheDistanceGameEngine.cpp
+    FindTheSpotGameEngine.cpp
+    BoomerangGameEngine.cpp
+    EggDropGameEngine.cpp
+    EvasionGameEngine.cpp
+    CaptureGameEngine.cpp
+    ShakeItGameEngine.cpp
+    MapBackground.cpp
+    SelectMapGameState.cpp
+    CreateMapGameState.cpp
+	
+    (h)
+    Utils.h
+    Main.h
+    IGameState.h
+    IGameObjects.h
+    IGameHandler.h
+    MapGame.h
+    LiveMaps.h
+    CoordinateScaler.h
+    GameState.h
+    IntroGameState.h
+    SelectGameGameState.h
+    HighScoreGameState.h
+    StaticContentGameState.h
+    ActiveGameState.h
+    MessageBox.h
+    TextEntryBox.h
+    IGameEngine.h
+    AccelerometerHandler.h
+    IwHTTPQueue.h
+    IwMultiplayerHandler.h
+    IwNotificationHandler.h
+    MapBackground.h
+    SelectMapGameState.h
+    CreateMapGameState.h
+
+    GoTheDistanceGameEngine.h
+    FindTheSpotGameEngine.h
+    BoomerangGameEngine.h
+    EggDropGameEngine.h
+    EvasionGameEngine.h
+    CaptureGameEngine.h
+    ShakeItGameEngine.h
+
+    [Data]
+    (data)
+    GpsGameUI.group
+    main.ui
+    messagebox.ui
+    styles.ui
+    active.ui
+    selectgame.ui
+    highscore.ui
+    help.ui
+    pause.ui
+    selectmap.ui
+    createmap.ui
+    IwUIStyles.itx
+}
+
+subprojects
+{
+    iwui
+    iwhttp
+    iwutil
+    iw2d
+    libjpeg
+    iwgraphics
+    tinyxml
+}
+
+assets
+{
+    (data)
+     splash.jpg
+     cursor.png
+     mark.png
+     loading.png
+     notfound.png
+     gpsgameui.group
+     gpsgameui.group.bin
+}
+
+deployments 
+{ 
+	name='PicnicGames'
+	copyright='mobileSRC'
+	manufacturer='mobileSRC'
+	version-major=1
+	winmobile-install-folder='mobileSRC'
+	iphone-icon='data/icon.png'
+	iphone-splash='data/splash.jpg'
+	itunes-artwork='data/itunes.png'
+	iphone-appid='mobilesrc.com.picnicgames'
+	iphone-region='US'
+	winmobile-icon=data/icon.ico
+	winmobile-icon16=data/icon16.ico
+	winmobile-icon32=data/icon32.ico
+	winmobile-icon48=data/icon48.ico
+	winmobile-icon64=data/icon64.ico
+	bada-icon=data/icon-bada.png
+	bada-splash=data/splash.jpg
+	bada-appid='w9573i0u4k'
+	bada-appsecret='41774594E89D7FE83540599D0A01B8DC'
+	bada-manifest=data/20101017_manifest.xml
+	iphone-icon-ipad=data/icon-ipad.png
+	iphone-icon-high-res=data/icon-hires.png
+	embed-icf='0'
+
+} 
